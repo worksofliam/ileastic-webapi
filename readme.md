@@ -1,0 +1,28 @@
+## ileastic-webapi sample
+
+This is a template repo with small important examples to get going with [ILEastic](https://github.com/sitemule/ILEastic) with VS Code.
+
+### Installation for ILEastic
+
+ILEastic and noxDb installation on IBM i is very simple.
+
+```sh
+git clone --recurse-submodules https://github.com/sitemule/ILEastic.git
+cd ILEastic
+gmake
+```
+
+This will create a library named `ILEASTIC`, which has two binding directories:
+
+* `ILEASTIC` which has the `ILEASTIC` service program inside of it
+* `NOXDB` which has the `NOXDB` service program inside of it
+
+### Usage
+
+After installation and cloning this template, open it inside of VS Code and connect to a system. VS Code may show you a message about installing recommended extensions - which are the IBM i specific extensions.
+
+Ensure `ILEASTIC` is on your library list and set your current library to where you want the new objects to be built.
+
+Next, you can open one of the sources in the `samples` directory and they can be compiled into program objects (Control + E / Command + E).
+
+!photohere
