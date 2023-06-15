@@ -25,4 +25,14 @@ Ensure `ILEASTIC` is on your library list and set your current library to where 
 
 Next, you can open one of the sources in the `samples` directory and they can be compiled into program objects (Control + E / Command + E).
 
-!photohere
+<img width="1210" alt="image" src="https://github.com/worksofliam/ileastic-webapi/assets/3708366/97e1931e-6bd8-4597-ae2f-2ec7aed147b8">
+
+### Running your web API
+
+Add `ILEASTIC` to your library list, as well as the library you compiled your program objects into.
+
+You can use `SBMJOB` to start your web API:
+
+```cl
+SBMJOB CMD(CALL PGM(helloworld)) ALWMLTTHD(*YES) JOB(helloworld) JOBQ(QSYSNOMAX) 
+```
